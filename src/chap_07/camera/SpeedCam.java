@@ -4,7 +4,15 @@ public class SpeedCam extends Camera {
 
 
     public SpeedCam() {
-        this.name = "과속단속";
+        super("과속단속");
+    }
+
+    public void takePicture() {
+        //사진 촬영
+        //System.out.println(this.name + " : 사진을 촬영합니다.");
+        super.takePicture();
+        checkSpeed();
+        recongnizeLicensePlate();
     }
 
 
