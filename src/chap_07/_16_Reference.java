@@ -24,4 +24,10 @@ public class _16_Reference {
         System.out.println(c2.name);
 
     }
+
+    public static void changeName(Camera camera) {
+        camera.name = "잘못된 카메라";
+
+
+    }
 }
